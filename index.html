@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rateless Codes Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rateless Codes Simulator</h1>
+    </header>
+    <main>
+        <div class="controls">
+            <label for="codeType">Choose a Rateless Code:</label>
+            <select id="codeType">
+                <option value="fountain">Fountain Code</option>
+                <option value="lt">LT Code</option>
+                <option value="raptor">Raptor Code</option>
+            </select>
+            <button id="simulateBtn">Simulate Encoding/Decoding</button>
+        </div>
+
+        <div id="simulationProgress">
+            <label>Simulation Progress:</label>
+            <progress id="progressBar" value="0" max="100"></progress>
+        </div>
+
+        <div id="output"></div>
+        <div id="performance">
+            <h3>Performance Metrics</h3>
+            <p id="successRate">Success Rate: 0%</p>
+            <p id="retransmissions">Retransmissions: 0</p>
+            <p id="timeTaken">Time Taken: 0s</p>
+        </div>
+    </main>
+    <footer>
+        <p>Rateless Codes Simulation Project</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
